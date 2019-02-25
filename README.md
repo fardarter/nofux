@@ -45,7 +45,7 @@ class Search extends React.Component {
       <div>
         <input
           placeholder="Search..."
-          value={nofux.search || ''}
+          value={nofux.search || Math.random()}
           onChange={event => {
             nofux.search = event.target.value;
             this.forceUpdate();
